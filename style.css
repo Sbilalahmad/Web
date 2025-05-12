@@ -1,0 +1,605 @@
+:root {
+    /* Professional Light Theme */
+    --primary-color: #2563eb; /* Professional Blue */
+    --secondary-color: #64748b; /* Muted Slate */
+    --success-color: #22c55e; /* Subtle Green Accent */
+
+    --bg-color: #f8fafc; /* Very light gray */
+    --text-color: #1e293b; /* Deep slate */
+    --card-bg-color: #fff;
+    --nav-bg-color: #fff;
+    --nav-text-color: #1e293b;
+    --nav-hover-color: var(--primary-color);
+    --header-bg-gradient-start: #2563eb;
+    --header-bg-gradient-end: #64748b;
+    --header-text-color: #fff;
+    --section-title-after-bg: var(--primary-color);
+    --footer-bg-color: #1e293b;
+    --footer-text-color: #e2e8f0;
+    --tag-bg-color: #e2e8f0;
+    --tag-text-color: #1e293b;
+    --input-bg-color: #fff;
+    --input-text-color: #1e293b;
+    --input-border-color: #cbd5e1;
+    --btn-primary-bg: var(--primary-color);
+    --btn-primary-text: #fff;
+    --btn-outline-text: var(--primary-color);
+    --btn-outline-border: var(--primary-color);
+    --section-alt-bg-color: #f1f5f9;
+    --box-shadow-color: rgba(30, 41, 59, 0.08);
+    --profile-img-border: var(--primary-color);
+    --social-icon-color: #cbd5e1;
+    --social-icon-hover-color: var(--primary-color);
+}
+
+body.dark-theme {
+    /* Professional Dark Theme */
+    --bg-color: #0f172a; /* Deep navy */
+    --text-color: #e2e8f0; /* Light slate */
+    --card-bg-color: #1e293b;
+    --nav-bg-color: #1e293b;
+    --nav-text-color: #93c5fd; /* Soft blue for nav links */
+    --nav-hover-color: #38bdf8; /* Lighter blue for hover */
+    --header-bg-gradient-start: #1e293b;
+    --header-bg-gradient-end: #2563eb;
+    --header-text-color: #fff;
+    --section-title-after-bg: #38bdf8;
+    --footer-bg-color: #0f172a;
+    --footer-text-color: #94a3b8;
+    --tag-bg-color: #334155;
+    --tag-text-color: #93c5fd;
+    --input-bg-color: #1e293b;
+    --input-text-color: #e2e8f0;
+    --input-border-color: #2563eb;
+    --btn-primary-bg: #2563eb;
+    --btn-primary-text: #fff;
+    --btn-outline-text: #38bdf8;
+    --btn-outline-border: #38bdf8;
+    --section-alt-bg-color: #1e293b;
+    --box-shadow-color: rgba(100, 116, 139, 0.12);
+    --profile-img-border: #2563eb;
+    --social-icon-color: #64748b;
+    --social-icon-hover-color: #38bdf8;
+
+    /* Animation Durations */
+    --glow-pulse-duration: 2.5s;
+    --flicker-duration: 5s;
+    --gradient-shift-duration: 10s;
+    --scanline-duration: 15s;
+}
+
+/* Cyber Light Theme (can be adjusted further if primary focus is dark) */
+:root {
+    --primary-color: #0abdc6; /* Cyber Neon Blue/Cyan */
+    --secondary-color: #d400ff; /* Cyber Neon Magenta */
+    --success-color: #39ff14; /* Cyber Neon Green */
+
+    /* Light Theme Variables (keeping these somewhat standard for contrast) */
+    --bg-color: #f0f2f5;
+    --text-color: #1c1c1c;
+    --card-bg-color: white;
+    --nav-bg-color: white;
+    --nav-text-color: #1c1c1c;
+    --nav-hover-color: var(--primary-color);
+    --header-bg-gradient-start: var(--primary-color);
+    --header-bg-gradient-end: var(--secondary-color);
+    --header-text-color: white;
+    --section-title-after-bg: var(--primary-color);
+    --footer-bg-color: #1c1c1c;
+    --footer-text-color: #e0e0e0;
+    --tag-bg-color: #e0e0e0;
+    --tag-text-color: #1c1c1c;
+    --input-bg-color: white;
+    --input-text-color: #1c1c1c;
+    --input-border-color: #ccc;
+    --btn-primary-bg: var(--primary-color);
+    --btn-primary-text: white;
+    --btn-outline-text: var(--primary-color);
+    --btn-outline-border: var(--primary-color);
+    --section-alt-bg-color: #e8eaed;
+    --box-shadow-color: rgba(0,0,0,0.1);
+    --profile-img-border: var(--primary-color);
+    --social-icon-color: #e0e0e0;
+    --social-icon-hover-color: var(--primary-color);
+}
+}
+
+body.dark-theme {
+    /* Cyber Dark Theme Variables */
+    --bg-color: #0d0d0d; /* Very dark background */
+    --text-color: #e0e0e0; /* Light grey text */
+    --card-bg-color: #1a1a1a; /* Dark card background */
+    --nav-bg-color: #1a1a1a; /* Dark nav background */
+    --nav-text-color: var(--primary-color); /* Neon text for nav links */
+    --nav-hover-color: var(--success-color); /* Different neon for hover */
+    --header-bg-gradient-start: #0d0d0d; /* Dark header */
+    --header-bg-gradient-end: #1f1f1f;
+    --header-text-color: var(--primary-color); /* Neon header text */
+    --section-title-after-bg: var(--success-color); /* Neon green underline */
+    --footer-bg-color: #0a0a0a; /* Even darker footer */
+    --footer-text-color: #b0b0b0;
+    --tag-bg-color: transparent;
+    --tag-text-color: var(--success-color);
+    --input-bg-color: #1f1f1f;
+    --input-text-color: #e0e0e0;
+    --input-border-color: var(--primary-color); /* Neon border for inputs */
+    --btn-primary-bg: var(--primary-color);
+    --btn-primary-text: #0d0d0d; /* Dark text on neon button */
+    --btn-outline-text: var(--primary-color);
+    --btn-outline-border: var(--primary-color);
+    --section-alt-bg-color: #121212; /* Slightly different dark for sections */
+    --box-shadow-color: rgba(0, 255, 255, 0.1); /* Faint cyan glow */
+    --profile-img-border: var(--primary-color);
+    --social-icon-color: var(--secondary-color); /* Neon social icons */
+    --social-icon-hover-color: var(--success-color);
+
+    /* Animation Durations */
+    --glow-pulse-duration: 2.5s;
+    --flicker-duration: 5s;
+    --gradient-shift-duration: 10s;
+    --scanline-duration: 15s;
+}
+
+/* Keyframes for Animations */
+@keyframes animatedGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes pulseGlow {
+    0%, 100% { text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color), 0 0 15px var(--secondary-color, 0.7); }
+    50% { text-shadow: 0 0 8px var(--primary-color), 0 0 15px var(--primary-color), 0 0 25px var(--secondary-color, 1); }
+}
+
+@keyframes textFlicker {
+    0%, 100% { opacity: 1; text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color), 0 0 15px var(--secondary-color); }
+    50% { opacity: 0.8; text-shadow: 0 0 6px var(--primary-color), 0 0 12px var(--primary-color), 0 0 18px var(--secondary-color); }
+    52% { opacity: 1; }
+    54% { opacity: 0.7; }
+    56% { opacity: 1; }
+}
+
+@keyframes scanlineMove {
+    0% { background-position: 0 0, 0 0; }
+    100% { background-position: 0 4px, 0 5px; } /* Adjust values for speed/distance */
+}
+
+
+body {
+    font-family: 'Share Tech Mono', 'Courier New', monospace; /* Cyber font */
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color); /* Use variable */
+    color: var(--text-color);         /* Use variable */
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+header {
+    background: linear-gradient(135deg, var(--header-bg-gradient-start), var(--header-bg-gradient-end)); /* Use variables */
+    color: var(--header-text-color); /* Use variable */
+    padding: 3rem 0; /* Increased padding */
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color); /* Neon border */
+}
+
+body.dark-theme header {
+    animation: animatedGradient var(--gradient-shift-duration) ease infinite;
+}
+
+
+body.dark-theme header h1 {
+    text-shadow: 0 0 5px var(--primary-color), 0 0 10px var(--primary-color), 0 0 15px var(--secondary-color);
+    animation: textFlicker var(--flicker-duration) infinite alternate;
+}
+body.dark-theme header .tagline {
+    color: var(--success-color);
+    text-shadow: 0 0 3px var(--success-color);
+}
+
+
+h1 {
+    font-size: 3rem; /* Slightly larger */
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+nav {
+    background-color: var(--nav-bg-color); /* Use variable */
+    box-shadow: 0 2px 10px var(--box-shadow-color); /* Use variable */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--primary-color); /* Subtle neon line */
+    display: flex; /* Added for layout */
+    justify-content: space-between; /* Align items */
+    align-items: center; /* Vertically align items */
+    padding: 0 1rem; /* Add some padding to nav */
+    position: relative; /* For absolute positioning of mobile menu */
+}
+
+/* Menu Toggle Button (Hamburger) */
+#menu-toggle-button {
+    display: none; /* Hidden by default on larger screens */
+    background: none;
+    border: none;
+    color: var(--nav-text-color);
+    font-size: 1.8rem; /* Adjust size as needed */
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 110; /* Ensure it's above the nav list when it's a dropdown */
+}
+
+#menu-toggle-button:hover {
+    color: var(--nav-hover-color);
+}
+
+nav ul#main-nav-list { /* Target the specific ul */
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-text-color); /* Use variable */
+    font-weight: 600;
+    transition: color 0.3s, text-shadow 0.3s;
+    padding: 0.5em 0;
+}
+
+nav a:hover {
+    color: var(--nav-hover-color);
+    text-shadow: 0 0 5px var(--nav-hover-color), 0 0 10px var(--nav-hover-color); /* Enhanced glow */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.2rem; /* Slightly larger */
+    position: relative;
+    color: var(--text-color); /* Ensure it uses theme text color */
+}
+
+body.dark-theme .section-title {
+    color: var(--primary-color); /* Neon title text in dark mode */
+    text-shadow: 0 0 5px var(--primary-color), 0 0 8px var(--secondary-color);
+}
+
+.section-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--section-title-after-bg); /* Use variable */
+    margin: 0.5rem auto 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--profile-img-border); /* Use variable */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.skill-card {
+    background: var(--card-bg-color); /* Use variable */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--box-shadow-color); /* Use variable */
+    padding: 1.5rem;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color); /* Or a theme-specific icon color if needed */
+}
+
+body.dark-theme .skill-icon {
+    color: var(--success-color); /* Example: different icon color in dark mode */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg-color); /* Use variable */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px var(--box-shadow-color); /* Use variable */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tag {
+    background-color: var(--tag-bg-color); /* Use variable */
+    color: var(--tag-text-color); /* Use variable */
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--btn-primary-bg); /* Use variable */
+    color: var(--btn-primary-text);       /* Use variable */
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--primary-color); /* Consider a hover variable */
+}
+body.dark-theme .btn:hover {
+    filter: brightness(1.2);
+}
+
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--btn-outline-border); /* Use variable */
+    color: var(--btn-outline-text);           /* Use variable */
+    margin-left: 0.5rem;
+}
+
+.btn-outline:hover {
+    background-color: var(--btn-outline-border); /* Use variable */
+    color: var(--btn-primary-text); /* Assuming primary text color for filled outline button */
+}
+
+body.dark-theme .btn-outline:hover {
+    color: var(--input-bg-color); /* Adjust for dark theme if needed */
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--input-border-color); /* Use variable */
+    border-radius: 2px; /* Sharper */
+    font-family: inherit;
+    background-color: var(--input-bg-color); /* Use variable */
+    color: var(--input-text-color);         /* Use variable */
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+footer {
+    background-color: var(--footer-bg-color); /* Use variable */
+    color: var(--footer-text-color);        /* Use variable */
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.social-icon {
+    color: var(--social-icon-color); /* Use variable */
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--social-icon-hover-color); /* Use variable */
+}
+
+/* Theme Toggle Button Styles */
+#theme-toggle {
+    background: none;
+    border: 1px solid var(--nav-text-color); /* Border for the button */
+    color: var(--nav-text-color);
+    font-size: 1.3rem; /* Adjusted size */
+    cursor: pointer;
+    padding: 0.4rem 0.6rem; /* Adjusted padding */
+    /* margin-left: 1rem; Removed, as nav is now flex space-between */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-toggle:hover {
+    color: var(--nav-hover-color);
+}
+
+#theme-toggle .fa-sun {
+    display: none; /* Hidden by default, shown in dark mode */
+}
+
+body.dark-theme #theme-toggle .fa-sun {
+    display: inline-block;
+}
+
+body.dark-theme #theme-toggle .fa-moon {
+    display: none;
+}
+
+/* Adjust background for specific sections if they have inline styles */
+#skills, #experience {
+    background-color: var(--section-alt-bg-color) !important; /* Use important if overriding inline styles */
+}
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Optional: Add a subtle scanline effect for dark theme */
+body.dark-theme::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.03));
+    background-size: 100% 4px, 5px 100%;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0.2;
+    animation: scanlineMove var(--scanline-duration) linear infinite; /* Added animation */
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        /* Adjust padding if needed for mobile */
+        padding: 0.5rem 1rem;
+    }
+
+    #menu-toggle-button {
+        display: block; /* Show hamburger on small screens */
+        z-index: 1001; /* Ensure toggle button is above the slide-in menu */
+    }
+    
+    nav ul#main-nav-list {
+        /* display: none; Remove this, visibility controlled by transform */
+        flex-direction: column;
+        gap: 1rem; /* Increased gap for better spacing */
+        
+        position: fixed; /* Changed from absolute to fixed */
+        top: 0;
+        left: 0; /* Start from the left edge */
+        width: 280px; /* Or your desired width, e.g., 75vw */
+        height: 100vh; /* Full viewport height */
+        
+        background-color: var(--nav-bg-color);
+        padding: 3rem 1.5rem 1.5rem; /* Adjust padding, more at top for spacing from edge */
+        
+        box-shadow: 2px 0 10px var(--box-shadow-color); /* Shadow on the right edge */
+        /* border-top: 1px solid var(--primary-color); Optional: remove if shadow is enough */
+        
+        transform: translateX(-100%); /* Initially off-screen to the left */
+        transition: transform 0.3s ease-in-out; /* Smooth slide animation */
+        z-index: 1000; /* High z-index to be on top of content */
+        
+        display: flex; /* Keep as flex for layout within the menu */
+        align-items: flex-start; /* Align items to the start (left) */
+    }
+
+    nav ul#main-nav-list.active {
+        /* display: flex; Remove this, already flex */
+        transform: translateX(0); /* Slide into view */
+    }
+    
+    nav li {
+        margin: 0;
+        width: 100%;
+        text-align: left; /* Align text to the left */
+    }
+
+    nav a {
+        display: block;
+        padding: 0.8rem 0; /* Adjust padding, remove side padding if items align left */
+        width: 100%; /* Ensure links take full width of their li container */
+    }
+
+    /* Ensure theme toggle is still reasonably placed */
+    #theme-toggle {
+        margin-left: auto; 
+        z-index: 1001; /* Ensure theme toggle is also above slide-in menu if it overlaps */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
